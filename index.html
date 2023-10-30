@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- !! NAVBAR -->
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-dark-subtle">
+          <a
+            class="navbar-brand ms-0"
+            href="https://www.linkedin.com/in/o%C4%9Fuzhan-berk-841037262/"
+            target="_blank"
+          >
+            <img src="ben.jpg" id="ben" class="ps-1 w-25 rounded-pill" alt="" />
+          </a>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="aramaKutusu"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="button" id="aramaYap">
+              Search
+            </button>
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto p-2">
+              <a
+                class="nav-link text-dark active çizgi"
+                aria-current="page"
+                href="#"
+                > <i class="fas fa-home"></i> ANA SAYFA |</a
+              >
+              <a class="nav-link text-dark çizgi" href="https://www.yesilay.org.tr/tr/genc-yesilay/biz-kimiz" target="_blank"> <i class="fas fa-info-circle"></i> HAKKIMIZDA | </a>
+              <a class="nav-link text-dark çizgi" href="https://tr.wikipedia.org/wiki/%C4%B0leti%C5%9Fim" target="_blank">  <i class="fas fa-envelope"></i> İLETİŞİM |</a>
+              <a class="nav-link text-dark çizgi" href="#sorular">  <i class="fas fa-question-circle"></i> S.S.S</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+
+      <!-- !! CAROUSEL -->
+      <div class="row mt-2">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="resim1.jpg"
+                class="d-block w-100"
+                id="resim"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-danger">
+                  Yeni İş Arkadaşları İle Çalışmaya Hazır Mısın ?
+                </h5>
+                <p class="text-white">
+                  Hayalindeki Çalışma Ortamı Bir Tık Uzağında
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="resim2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-white">
+                  Farklı Tarzda Çalışmalara Ne Dersin ?
+                </h5>
+                <p class="text-danger fw-bold">
+                  Alışılmışın Dışında Bir Ortam Seni Bekliyor
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="resim3.webp" class="d-block w-100" alt="..." />
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="text-danger">
+                  Minik Dostlarımızı Unutmadık Değil Mi ?
+                </h5>
+                <p class="text-white">
+                  Dünyanın Sadece İnsanlara Ait Olmadığına İnanıyoruz
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <h4 class="mt-5 text-center align-items">
+        FAALİYETLERİMİZ VE ÇALIŞMA ORTAMIMIZ
+      </h4>
+      <hr />
+      <!-- !! CARDS -->
+      <div class="row mt-5">
+        <div class="col-md-3">
+          <div class="card" style="width: 100%">
+            <img src="yemek.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Yemeklerimiz</h5>
+              <p class="card-text">Lezzetli yemeklerimiz</p>
+              <a href="#" class="btn btn-outline-info w-100">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 100%">
+            <img src="ortam.jpg" class="card-img-top w-100" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dinlenme</h5>
+              <p class="card-text">Nezih mekanlar...</p>
+              <a href="#" class="btn btn-outline-info w-100">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 100%">
+            <img src="mekan.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Kafemiz</h5>
+              <p class="card-text">Konforlu kafemiz...</p>
+              <a href="#" class="btn btn-outline-info w-100">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 100%">
+            <img src="spor.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Spor Salonumuz</h5>
+              <p class="card-text">Ücretisiz salonumuz</p>
+              <a href="#" class="btn btn-outline-info w-100">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <!-- !! PROJE -->
+      <div class="row proje">
+        <div class="col-md-6 mt-5">
+          <img src="oku.jpg" class="w-100 h-100" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="mt-5">
+            Projemize Katılmak İçin Bizimle İletişime Geçin...
+          </h3>
+          <ul class="mt-5 social-links">
+            <li>
+              <a href="https://tr-tr.facebook.com/" target="_blank">
+                <i class="fab fa-facebook-square fs-1"></i> Facebook ile...
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <a href="https://instagram.com/" target="_blank" class="">
+                  <i class="fab fa-instagram-square fs-1"></i> Instagram ile..
+                </a></a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank">
+                <i class="fab fa-twitter-square fs-1"></i> Twitter ile...
+              </a>
+            </li>
+            <li>
+              <a href="https://web.whatsapp.com/" target="_blank">
+                <i class="fab fa-whatsapp-square fs-1"></i> Twitter ile...
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <!-- !! SIK SORULAN SORULAR -->
+      <div class="row" id="sorular">
+        <p class="d-inline-flex gap-1">
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Gerekli Belgeler Nelerdir ?
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is
+            hidden by default but revealed when the user activates the relevant
+            trigger.
+          </div>
+        </div>
+
+        <p class="d-inline-flex gap-1">
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Adres ve İletişim Bilgileri Nelerdir ?
+          </a>
+        </p>
+      </div>
+
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Some placeholder content for the collapse component. This panel is
+          hidden by default but revealed when the user activates the relevant
+          trigger.
+        </div>
+      </div>
+      <!-- !! FOOTER -->
+      
+      <nav class="navbar navbar-light bg-info">
+        <div class="container " >
+        <span class="navbar-text text-white d-flex justify-content-center w-100">
+            © 2023 Bu Site by_ozi Group tarafından hazırlandı..
+          </span>
+        </nav>
+        </div>
+     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js.js"></script>
+  </body>
+</html>
