@@ -62,3 +62,17 @@ hr {
 .fa-whatsapp-square {
   color: #25d366;
 }
+.ayar:focus{
+  outline: none;
+}
+.harita{
+width: 100%;
+height: 100%;
+}
+.formbuton{
+
+  outline: none;
+}
+.formbuton:hover{
+  transform: scale(0.98);
+}
